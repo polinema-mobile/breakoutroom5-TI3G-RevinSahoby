@@ -1,6 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <EditText
+        android:id="@+id/FathersnameTxt"
+        android:layout_width="349dp"
+        android:layout_height="62dp"
+        android:hint="Fathers name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/NikFathTxt"
+        android:layout_width="349dp"
+        android:layout_height="79dp"
+        android:ems="10"
+        android:hint="Nik father"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FathersnameTxt" />
+
+    <EditText
+        android:id="@+id/MotherNametxt"
+        android:layout_width="349dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:hint="mother name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NikFathTxt" />
+
+    <EditText
+        android:id="@+id/NikMothtxt"
+        android:layout_width="349dp"
+        android:layout_height="77dp"
+        android:ems="10"
+        android:hint="NIK mother"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MotherNametxt" />
+
+    <EditText
+        android:id="@+id/DoBFathertxt"
+        android:layout_width="349dp"
+        android:layout_height="74dp"
+        android:ems="10"
+        android:hint="Father DoB"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NikMothtxt" />
+
+    <EditText
+        android:id="@+id/DoBMothertxt"
+        android:layout_width="349dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="Mother DoB"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DoBFathertxt" />
+
+        <EditText
+        android:id="@+id/Addresstxt"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DoBMothertxt"/>
+
+    <EditText
+        android:id="@+id/RTtxt"
+        android:layout_width="349dp"
+        android:layout_height="84dp"
+        android:ems="10"
+        android:hint="Rt"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Addresstxt" />
+
+    <EditText
+        android:id="@+id/Rwtxt"
+        android:layout_width="349dp"
+        android:layout_height="89dp"
+        android:ems="10"
+        android:hint="00"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RTtxt" />
+
+    <Spinner
+        android:id="@+id/spinnerProvince"
+        android:layout_width="349dp"
+        android:layout_height="89dp"
+        android:entries="@array/province_array"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rwtxt" />
+
+    <EditText
+        android:id="@+id/kabupatentxt"
+        android:layout_width="349dp"
+        android:layout_height="89dp"
+        android:ems="10"
+        android:hint="--"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProvince" />
+
+    <EditText
+        android:id="@+id/KodePostxt"
+        android:layout_width="349dp"
+        android:layout_height="89dp"
+        android:ems="10"
+        android:hint="RW"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kabupatentxt" />
+
+    <EditText
+        android:id="@+id/Teltxt"
+        android:layout_width="349dp"
+        android:layout_height="89dp"
+        android:ems="10"
+        android:hint="0822-9876-2353"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KodePostxt" />
+
+    <EditText
+        android:id="@+id/Emailtxt"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="/@gmail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Teltxt" />
+
+    <EditText
+        android:id="@+id/FDiplomtxt"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="Fathers diplom"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Emailtxt" />
+
+    <EditText
+        android:id="@+id/MDiplomtxt"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="Mothers Diplom"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FDiplomtxt" />
+
+    <EditText
+        android:id="@+id/FathJobtxt"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="Fathers Job"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MDiplomtxt" />
+
+    <EditText
+        android:id="@+id/MomJobtxt"
+        android:layout_width="349dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="Mothers Job"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FathJobtxt" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="238dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Next"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MomJobtxt"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

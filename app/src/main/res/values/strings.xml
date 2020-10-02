@@ -65,4 +65,15 @@
         <item>Solo</item>
         <item>Malang</item>
     </string-array>
+    <string-array name="province_array">
+        <item>Malang</item>
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Surabaya</item>
+        <item>Lampung</item>
+        <item>Cirebon</item>
+        <item>Solo</item>
+        <item>Yogyakarta</item>
+
+    </string-array>
 </resources>

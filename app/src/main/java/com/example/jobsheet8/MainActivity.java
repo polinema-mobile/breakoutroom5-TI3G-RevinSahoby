@@ -136,7 +136,9 @@ public class MainActivity extends AppCompatActivity {
         String prov = Provinsi.getSelectedItem().toString();
         String kota = Kota.getSelectedItem().toString();
         String stts = status.getSelectedItem().toString();
+
         Intent intent = new Intent(this, SecondActivity.class);
+
         intent.putExtra("Name", name);
         intent.putExtra("Jurusan", major);
         intent.putExtra("Password", pass);
@@ -156,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("Nomor Rumah", phoneNumber);
         intent.putExtra("No. HP", phone);
         intent.putExtra("Email", mail);
+
 //        //create object mahasiswa
 //        mhs = new mahasiswa(name,no,date,sex,major);
 //        // put mahasiswa object to extra
